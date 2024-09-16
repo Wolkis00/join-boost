@@ -32,7 +32,7 @@ const HttpsProxyAgent = require("https-proxy-agent")
 const fs = require("fs")
 //read from tokens.txt
 
-console.log(gradient.rainbow("Token Joiner by @uutu"))
+console.log(gradient.rainbow("Token Joiner "))
 
 async function readTokens() {
   const tokens = fs.readFileSync("tokens.txt").toString().split("\n")
