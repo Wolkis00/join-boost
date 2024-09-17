@@ -6,14 +6,14 @@ process.on("unhandledRejection", (reason, promise) => {
       "[ERROR]"
     )} Unhandled rejection at ${promise}, reason: ${reason}`
   )
-  // Application specific logging, throwing an error, or other logic here
+
 })
 
 process.on("uncaughtException", (err, origin) => {
   console.log(
     `${chalk.redBright("[ERROR]")} Uncaught exception: ${err} at ${origin}`
   )
-  // Application specific logging, throwing an error, or other logic here
+
 })
 const gradient = require("gradient-string")
 
@@ -30,7 +30,7 @@ if (invite.includes(".")) {
 
 const HttpsProxyAgent = require("https-proxy-agent")
 const fs = require("fs")
-//read from tokens.txt
+
 
 console.log(gradient.rainbow("Token Joiner "))
 
